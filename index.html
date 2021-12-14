@@ -1,34 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Transparente</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Breno Henrique - Heat 2021</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="content">
-                <h2>01</h2>
-                <h3>Card um</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nisi, dignissimos consequatur minus ex at a corrupti magnam dolorum debitis repellendus sunt repudiandae amet veritatis iusto ipsam odio ducimus incidunt?
-                </p>
-                <a href="#"> Mais informações</a>
+
+    <main class="total">
+        <div class="container">
+
+            <div class="avatar">
+                <span>
+            <img src="images/build.svg" alt="Selo Rocketseat" />
+          </span>
+                <img src="images/5e8e6bdb-a35c-4ef4-af73-95c04809a3f8.jfif" alt="Foto pessoal" />
             </div>
+
+            <h1 id='userName'>Breno Lima</h1>
+            <a id='userLink' href="https://github.com/Breno-Lima" target="_blank">
+                <img src="images/github.svg" alt="ícone github" /> <span id='userLogin '>Breno-Lima</span>
+            </a>
+
+            <p id='userBio'>Estudante da UFPB-Ciência da Computação</p>
+
+            <ul id='socialLinks'>
+                <li class='youtube'>
+                    <a href="https://youtube.com/brenogood" target="_blank">
+                        <img src="images/youtube.svg" alt="ícone youtube" />
+                    </a>
+                </li>
+                <li class='facebook'>
+                    <a href="https://facebook.com/brenogood" target="_blank">
+                        <img src="images/facebook.svg" alt="ícone facebook" />
+                    </a>
+                </li>
+                <li class='instagram'>
+                    <a href="https://instagram.com/brenogood" target="_blank">
+                        <img src="images/instagram.svg" alt="ícone instagram" />
+                    </a>
+                </li>
+                <li class='twitter'>
+                    <a href="https://twitter.com/brenogood" target="_blank">
+                        <img src="images/twitter.svg" alt="ícone twitter" />
+                    </a>
+                </li>
+            </ul>
+
         </div>
-    </div>
+
+    </main>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".card"), {
+        VanillaTilt.init(document.querySelectorAll(".total"), {
             max: 25,
             speed: 400,
             glare: true,
-            'max-glare': 1,
+            'max-glare': 0.3,
+
         });
     </script>
 </body>
