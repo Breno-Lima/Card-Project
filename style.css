@@ -1,87 +1,78 @@
-    * {
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100;
-        background: url('1193348.jpg');
-    }
-    
-    .container {
-        margin-top: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
-        flex-wrap: wrap;
-        z-index: 1;
-    }
-    
-    .container .card {
-        position: relative;
-        width: 280px;
-        height: 400px;
-        margin: 30px;
-        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.1);
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(2px);
-    }
-    
-    .container .card .content {
-        padding: 20px;
-        text-align: center;
-        transform: translate(100px);
-        opacity: 0;
-        transition: 0.5s;
-    }
-    
-    .container .card:hover .content {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-    
-    .container .card .content h2 {
-        position: absolute;
-        top: -80px;
-        right: 30px;
-        font-size: 8em;
-        color: rgba(255, 255, 255, 0.05);
-        pointer-events: none;
-    }
-    
-    .container .card .content h3 {
-        font-size: 1.8em;
-        color: #fff;
-        z-index: 1;
-    }
-    
-    .container .card .content p {
-        font-size: 1em;
-        color: #fff;
-        font: weight 300px;
-    }
-    
-    .container .card .content a {
-        position: relative;
-        display: inline-block;
-        padding: 8px 20px;
-        margin-top: 15px;
-        background: #fff;
-        color: black;
-        text-decoration: none;
-        border-radius: 20px;
-        font-weight: 500;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
+html,
+body {
+    --black: hsl(240, 91%, 46%);
+    --grey: hsl(240, 16%, 83%);
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 10px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-image: url('images/wallpapersden.com_colorful-neon-bubbles_1920x1080.jpg');
+}
+
+main {
+    background: url(images/background.svg);
+    width: 375px;
+    height: 812px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--grey);
+}
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+.avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.avatar>img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: var(--grey);
+    text-decoration: none;
+    margin-top: 0.25rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 2rem;
+}
+
+ul {
+    margin-top: 4rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
